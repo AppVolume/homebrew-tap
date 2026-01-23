@@ -25,7 +25,13 @@ cask "appvolume" do
   auto_updates true
   depends_on macos: ">= :sonoma"
 
-  pkg "AppVolume-#{version}-#{arch == :arm64 ? "arm64" : "x86_64"}.pkg"
+  on_arm do
+    pkg "AppVolume-#{version}-arm64.pkg"
+  end
+
+  on_intel do
+    pkg "AppVolume-#{version}-x86_64.pkg"
+  end
 
   uninstall launchctl: "io.appvolume.daemon",
             quit:      "io.appvolume",
