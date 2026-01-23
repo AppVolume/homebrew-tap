@@ -26,8 +26,8 @@ brew uninstall --cask appvolume
 AppVolume provides per-application volume control for macOS. Control the volume of individual apps from your menu bar.
 
 - Website: https://appvolume.app
-- Requires macOS Ventura (13.0) or later
-- 14-day free trial, then requires a license
+- Requires macOS Sonoma (14.0) or later
+- Currently in Early Access
 
 ## Issues
 
