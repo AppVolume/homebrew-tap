@@ -23,7 +23,7 @@ cask "appvolume" do
   end
 
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: ">= :sonoma"
 
   pkg "AppVolume-#{version}-#{arch == :arm64 ? "arm64" : "x86_64"}.pkg"
 
@@ -43,7 +43,7 @@ cask "appvolume" do
   ]
 
   caveats <<~EOS
-    AppVolume requires a license after a 14-day free trial.
-    Purchase at https://appvolume.app
+    AppVolume is currently in Early Access.
+    Learn more at https://appvolume.app
   EOS
 end
