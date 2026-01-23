@@ -5,7 +5,7 @@ This is the official [Homebrew](https://brew.sh) tap for [AppVolume](https://app
 ## Installation
 
 ```bash
-brew tap appvolume/appvolume
+brew tap appvolume/tap
 brew install --cask appvolume
 ```
 
