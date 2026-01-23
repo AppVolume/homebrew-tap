@@ -1,13 +1,13 @@
 cask "appvolume" do
-  version "0.1.29"
+  version "0.1.30"
 
   on_arm do
-    sha256 "fdb3d10458ba16d6e458a1a918f85150b0900bc232b0908833beecfde4d82288"
+    sha256 "a0232c9ca9300c714c41693fa0e51b6ca4e20dda7951db2d66c77ec2c985f280"
     url "https://releases.appvolume.app/AppVolume-#{version}-arm64.pkg"
   end
 
   on_intel do
-    sha256 "5790c57e61e4cc989f7c6a41b011db1aeb5bf1e3bbcd77e584b8ed07d9eb5cd8"
+    sha256 "89f785c33020442a6bb3b8a1d171135e5ee97be35a8a1978b38322c0cc52784d"
     url "https://releases.appvolume.app/AppVolume-#{version}-x86_64.pkg"
   end
 
