@@ -1,24 +1,20 @@
 # Homebrew Tap for AppVolume
 
-This is the official [Homebrew](https://brew.sh) tap for [AppVolume](https://appvolume.app).
+> **Note:** AppVolume is now available in the official [Homebrew Cask](https://formulae.brew.sh/cask/appvolume). You no longer need this tap.
 
-## Installation
+## Recommended Installation
 
 ```bash
-brew tap appvolume/tap
-brew install --cask appvolume
+brew install appvolume
 ```
 
-## Upgrading
+## Switching from this tap
+
+If you previously installed via this tap:
 
 ```bash
-brew upgrade --cask appvolume
-```
-
-## Uninstalling
-
-```bash
-brew uninstall --cask appvolume
+brew untap appvolume/tap
+brew install appvolume
 ```
 
 ## About AppVolume
@@ -27,10 +23,7 @@ AppVolume provides per-application volume control for macOS. Control the volume 
 
 - Website: https://appvolume.app
 - Requires macOS Sonoma (14.0) or later
-- Currently in Early Access
 
 ## Issues
 
-For issues with the app itself, please report at: https://github.com/AppVolume/appvolume/issues
-
-For issues with this Homebrew tap, please include `brew config` and `brew doctor` output.
+For issues with the app, please email hello@appvolume.app
