@@ -30,7 +30,10 @@ cask "appvolume" do
               "io.appvolume.driver",
               "io.appvolume.ui",
             ],
-            delete:    "/Library/Audio/Plug-Ins/HAL/AppVolumeAudioDevice.driver"
+            delete:    [
+              "/Library/Audio/Plug-Ins/HAL/AppVolumeAudioDevice.driver",
+              "~/Library/LaunchAgents/io.appvolume.daemon.plist",
+            ]
 
   uninstall_postflight do
     system_command "/usr/bin/killall",
