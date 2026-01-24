@@ -32,6 +32,12 @@ cask "appvolume" do
             ],
             delete:    "/Library/Audio/Plug-Ins/HAL/AppVolumeAudioDevice.driver"
 
+  uninstall_postflight do
+    system_command "/usr/bin/killall",
+                   args: ["coreaudiod"],
+                   sudo: true
+  end
+
   zap trash: [
     "~/Library/Application Support/AppVolume",
     "~/Library/Caches/io.appvolume",
