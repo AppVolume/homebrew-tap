@@ -37,4 +37,11 @@ cask "appvolume" do
     "~/Library/Caches/io.appvolume",
     "~/Library/Preferences/io.appvolume.plist",
   ]
+
+  caveats <<~EOS
+    AppVolume is now available in the official Homebrew Cask.
+    You can switch by running:
+      brew untap appvolume/tap
+      brew install appvolume
+  EOS
 end
