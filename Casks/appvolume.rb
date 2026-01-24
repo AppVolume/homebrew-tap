@@ -37,9 +37,4 @@ cask "appvolume" do
     "~/Library/Caches/io.appvolume",
     "~/Library/Preferences/io.appvolume.plist",
   ]
-
-  caveats <<~EOS
-    AppVolume is currently in Early Access.
-    Learn more at https://appvolume.app
-  EOS
 end
